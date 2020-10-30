@@ -1,4 +1,0 @@
-﻿  test1.5.cpp
-E:\Workspace\vs2019\EssentialC++\test1.5\test1.5.cpp(24,15): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“char *”
-E:\Workspace\vs2019\EssentialC++\test1.5\test1.5.cpp(24,15): message : 请考虑在格式字符串中使用“%hhd”
-E:\Workspace\vs2019\EssentialC++\test1.5\test1.5.cpp(24,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

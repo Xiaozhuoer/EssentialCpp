@@ -1,4 +1,0 @@
-﻿  test1.6.cpp
-E:\Workspace\vs2019\EssentialC++\test1.6\test1.6.cpp(41,25): warning C4018: “<”: 有符号/无符号不匹配
-E:\Workspace\vs2019\EssentialC++\test1.6\test1.6.cpp(46,25): warning C4018: “<”: 有符号/无符号不匹配
-  test1.6.vcxproj -> E:\Workspace\vs2019\EssentialC++\test1.6\Debug\test1.6.exe
