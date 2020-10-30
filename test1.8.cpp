@@ -1,4 +1,4 @@
-/*
+﻿/*
 --------------------------------------------------------
 
    练习1.8
@@ -23,31 +23,31 @@ string pell_seq[seq_size] = {
     "It will be ok \n" ,
 };
 
-int main(){
+int main() {
     string  error_times = "";
-    while(1){
-        cout << "Please enter error times(1 ~ 4) (q to quit): "  ;
-        cin  >> error_times ;
+    while (1) {
+        cout << "Please enter error times(1 ~ 4) (q to quit): ";
+        cin >> error_times;
 
         //用户输入q 则退出
-        if(error_times == "q"){
+        if (error_times == "q") {
             break;
         }
-        switch (stoi(error_times) - 1){
-            case 0:
-                cout << pell_seq[0];
-                break;
-            case 1:
-                cout << pell_seq[1];
-                break;
-            case 2:
-                cout << pell_seq[2];
-                break;
-            case 3:
-                cout << pell_seq[3];
-                break;
-            default:
-                break;
+        switch (stoi(error_times) - 1) {
+        case 0:
+            cout << pell_seq[0];
+            break;
+        case 1:
+            cout << pell_seq[1];
+            break;
+        case 2:
+            cout << pell_seq[2];
+            break;
+        case 3:
+            cout << pell_seq[3];
+            break;
+        default:
+            break;
         }
     }
 }
