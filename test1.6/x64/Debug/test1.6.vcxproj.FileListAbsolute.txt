@@ -1,0 +1,2 @@
+E:\Workspace\vs2019\EssentialC++\test1.6\x64\Debug\test1.6.exe
+E:\Workspace\vs2019\EssentialC++\test1.6\x64\Debug\test1.6.pdb
