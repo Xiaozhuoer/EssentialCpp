@@ -24,12 +24,16 @@ string pell_seq[seq_size] = {
 };
 
 int main(){
-    char  error_times = 0;
-    while(error_times != 'q'){
+    string  error_times = "";
+    while(1){
         cout << "Please enter error times(1 ~ 4) (q to quit): "  ;
         cin  >> error_times ;
-        //error_times - '0' 是为了char数字转int
-        switch (error_times - '0' - 1){
+
+        //用户输入q 则退出
+        if(error_times == "q"){
+            break;
+        }
+        switch (stoi(error_times) - 1){
             case 0:
                 cout << pell_seq[0];
                 break;

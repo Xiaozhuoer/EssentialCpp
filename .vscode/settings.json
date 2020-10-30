@@ -6,6 +6,9 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "xutility": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "string": "cpp",
+        "cstring": "cpp",
+        "cctype": "cpp"
     }
 }
