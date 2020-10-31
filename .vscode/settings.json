@@ -9,6 +9,8 @@
         "type_traits": "cpp",
         "string": "cpp",
         "cstring": "cpp",
-        "cctype": "cpp"
+        "cctype": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp"
     }
 }
