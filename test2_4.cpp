@@ -36,6 +36,7 @@ inline bool checkPosSize(int pos){
     }
     return true;
 }
+
 const vector<int>* Pentagonal(int elem_num){
     //持久化pent
     static vector<int> pent;
