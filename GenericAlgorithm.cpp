@@ -1,7 +1,7 @@
 /*
 
     2020.11.1 ： 搞不定的BUG, 以后有机会再回来看看这个坑
-    
+
 
 */
 
@@ -37,6 +37,20 @@ OutputIterator sub_vec(InputIterator first, InputIterator last ,
 
 }
 
+int main(){
+    const int val = 7;
+    vector<int> vec{6,3,8,4,11,7};
+    vector<int> vec2(val);
+    vector<int> vecResult(sub_vec(vec.begin(), vec.end(), vec2.begin(), val));
+    
+    vector<int>::iterator it;
+    for (it = vecResult.begin(); it != vecResult.end(); it++) {
+        cout << *it << " ";
+    }
+    
+    return 0;
+}
+
 // void sub_vec(const vector<int> &vec, int val){
 //     vector<int> local_vec(vec);
 
@@ -69,20 +83,4 @@ OutputIterator sub_vec(InputIterator first, InputIterator last ,
 //     cout << endl;
 
 // }
-
-
-
-int main(){
-    const int val = 7;
-    vector<int> vec{6,3,8,4,11,7};
-    vector<int> vec2(val);
-    vector<int> vecResult(sub_vec(vec.begin(), vec.end(), vec2.begin(), val));
-    
-    vector<int>::iterator it;
-    for (it = vecResult.begin(); it != vecResult.end(); it++) {
-        cout << *it << " ";
-    }
-    
-    return 0;
-}
 
