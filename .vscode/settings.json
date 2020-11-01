@@ -22,6 +22,16 @@
         "xlocale": "cpp",
         "xlocinfo": "cpp",
         "xlocnum": "cpp",
-        "xstddef": "cpp"
+        "xstddef": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "cstdint": "cpp",
+        "cstdlib": "cpp",
+        "compare": "cpp",
+        "list": "cpp",
+        "xhash": "cpp",
+        "utility": "cpp"
     }
 }
