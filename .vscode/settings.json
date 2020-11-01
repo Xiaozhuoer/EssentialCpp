@@ -32,6 +32,7 @@
         "compare": "cpp",
         "list": "cpp",
         "xhash": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "system_error": "cpp"
     }
 }

@@ -4,6 +4,19 @@
 + vscode (default)  
 + vs2019  
 
+# bubblesort  
+
+BubbleSort冒泡排序算法
+
+# fstream  
+
+简单的文件读写练习
+
+# GenericAlgorithm
+
+范式编程, 有搞不定的BUG
+2020.11.1 : 难!
+
 # Test1.1  
 
 将先前介绍的main()程序依样画葫芦地输入.
