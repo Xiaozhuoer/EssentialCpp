@@ -1,10 +1,3 @@
-/*
-
-    2020.11.1 ： 搞不定的BUG, 以后有机会再回来看看这个坑
-
-
-*/
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -14,40 +7,47 @@ using namespace std;
 using namespace placeholders;
 
 template <typename InputIterator, typename OutputIterator,
-          typename ElemType>
-OutputIterator sub_vec(InputIterator first, InputIterator last ,
-                       OutputIterator at, ElemType val){
-    //, Comp pred
-    //1.对传入的InputIterator排序
-    sort(first, last, less<InputIterator>());
+    typename ElemType, typename Comp>
 
-    // vector<int>::iterator it_sort, it_find, it_erase, it_find_if;
-    // vector<ElemType>::iterator it;
-    
-    //找到指定val值
+    OutputIterator sub_vec(InputIterator first, InputIterator last, OutputIterator at, ElemType val, Comp pred) {
+    //Comp pred
+    //对传入的InputIterator排序
+    //less -> 删除小于指定val值的元素
+    //greater -> 删除大于指定val值的元素
+    sort(first, last, pred);
+
+    //找到指定val值的指针位置
     //find(first,last, val);
-    //删除大于指定val值的元素
-    first = find(first,last, val);
-
-    while(first != last){
-        *at++ = *first++;
-    }
+    at = find(first, last, val);
 
     return at;
-
 }
 
-int main(){
+int main() {
     const int val = 7;
-    vector<int> vec{6,3,8,4,11,7};
+    int ia[val] = { 14,6,3,8,4,11,7 };
+    vector<int> vec{ ia, ia + val };
+
+
+    //vector<int> 测试
+    cout << "vector<int> test : ";
     vector<int> vec2(val);
-    vector<int> vecResult(sub_vec(vec.begin(), vec.end(), vec2.begin(), val));
-    
-    vector<int>::iterator it;
-    for (it = vecResult.begin(); it != vecResult.end(); it++) {
+    vector<int>::iterator it = sub_vec(vec.begin(), vec.end(), vec2.begin(), 8, less<int>());
+    while (it != vec.end()) {
         cout << *it << " ";
+        *it++;
     }
-    
+
+    cout << endl;
+    //array<int> 测试
+    cout << "array<int> test : ";
+    int ia2[val];
+    int *result = sub_vec(ia, ia + val, ia2, 7, less<int>());
+    while (*result != ia[val]) {
+        cout << *result << " ";
+        *result++;
+    }
+
     return 0;
 }
 
@@ -83,4 +83,3 @@ int main(){
 //     cout << endl;
 
 // }
-

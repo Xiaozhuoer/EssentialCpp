@@ -12,10 +12,10 @@ BubbleSort冒泡排序算法
 
 简单的文件读写练习
 
-# GenericAlgorithm
+# GenericAlgorithm  
 
-范式编程, 有搞不定的BUG
 2020.11.1 : 难!
+2020.11.2 ：BUG修改完成！
 
 # Test1.1  
 
