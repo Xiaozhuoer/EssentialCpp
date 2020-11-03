@@ -22,7 +22,7 @@ template <typename InputIterator, typename OutputIterator,
 
     return at;
 }
-
+ 
 int main() {
     const int val = 7;
     int ia[val] = { 14,6,3,8,4,11,7 };

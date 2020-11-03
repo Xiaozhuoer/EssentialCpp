@@ -33,6 +33,9 @@
         "list": "cpp",
         "xhash": "cpp",
         "utility": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "xtree": "cpp",
+        "set": "cpp",
+        "map": "cpp"
     }
 }
