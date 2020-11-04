@@ -58,6 +58,8 @@ int main() {
     }
     sort(verStr.begin(), verStr.end(), cmp());
     displayVec(verStr);
+
+    return 0;
 }
 
 //过滤标点符号和单字

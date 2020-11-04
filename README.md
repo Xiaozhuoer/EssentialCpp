@@ -33,8 +33,8 @@ BubbleSort冒泡排序算法
 
 输入两行文字并存盘. 然后编写一个程序, 打开该文本文件, 将其中的每个字都读取到一个vector\<string>对象中. 遍历该vector, 将内容显示到cout. 然后利用泛型算法sort(), 对所有文字排序:
 
-    \#include \<algorithm>  
-    sort( container.begin(), container.end());  
+\#include \<algorithm>  
+sort( container.begin(), container.end());  
 
 再将排序后的结果输出到另一个文件.
 
