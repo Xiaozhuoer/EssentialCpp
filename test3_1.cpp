@@ -23,8 +23,7 @@
 
 using namespace std;
 
-string exclusion(string );
-string exclusion(string );
+
 void displayMap(map<string,int> );
 void usrFindWork(map<string,int> );
 
@@ -47,9 +46,6 @@ int main(){
 
     map<string,int>::iterator iter;
     map<string,int> text;
-    
-    //读取文本文件, 单字存入map
-    //copy(is, eof, back_inserter(text));
     
     //获取单字
     while(in_file >> fileWorkSwap){
