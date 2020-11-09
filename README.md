@@ -98,3 +98,7 @@ Pentagonal数列的求值公式是P(n)=n(3n-1)/2, 借此产生1,5,12,22,35等元
 
 建立Stack.h, 编写main()函数, 练习操作Stack的所有公开接口, 并加以编译执行. 程序代码文件和main()都必须包含Stack.h:  
     #include "Stack.h"  
+
+# Test4.2  
+
+扩展Stack的功能, 以支持find()和count()两个操作.find()会查看某值是否存在而返回true或false. count()返回某字符串的出现次数.  
