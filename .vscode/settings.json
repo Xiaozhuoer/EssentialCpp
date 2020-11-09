@@ -38,6 +38,20 @@
         "set": "cpp",
         "map": "cpp",
         "unordered_map": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "stack": "cpp",
+        "atomic": "cpp",
+        "cmath": "cpp",
+        "concepts": "cpp",
+        "cstddef": "cpp",
+        "cstdio": "cpp",
+        "cwchar": "cpp",
+        "deque": "cpp",
+        "ios": "cpp",
+        "limits": "cpp",
+        "stdexcept": "cpp",
+        "typeinfo": "cpp",
+        "xfacet": "cpp",
+        "xtr1common": "cpp"
     }
 }

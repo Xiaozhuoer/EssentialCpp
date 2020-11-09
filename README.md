@@ -93,3 +93,8 @@ Pentagonal数列的求值公式是P(n)=n(3n-1)/2, 借此产生1,5,12,22,35等元
 # Test3.4  
 
 编写一个程序, 利用istream_iterator从标准输入设备读取一连串整数. 利用ostream_iterator将其中的奇数写至某个文件, 每个数值皆以空格分隔. 再利用ostream_iterator将偶数写到另一个文件, 每个数值单独放在一行中.  
+
+# Test4.1  
+
+建立Stack.h, 编写main()函数, 练习操作Stack的所有公开接口, 并加以编译执行. 程序代码文件和main()都必须包含Stack.h:  
+    #include "Stack.h"  
