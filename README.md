@@ -102,3 +102,17 @@ Pentagonal数列的求值公式是P(n)=n(3n-1)/2, 借此产生1,5,12,22,35等元
 # Test4.2  
 
 扩展Stack的功能, 以支持find()和count()两个操作.find()会查看某值是否存在而返回true或false. count()返回某字符串的出现次数.  
+
+# Test4.3  
+
+考虑以下所定义的全局(global)数据:  
+
++ string program_name;
++ string version_stamp;
++ int version_number;
++ int tests_run;
++ int tests_passed;  
+
+编写一个包装这些数据的类.  
+
+
