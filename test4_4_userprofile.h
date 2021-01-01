@@ -1,13 +1,15 @@
 /*
 --------------------------------------------------------
 
-        Ò»·İ"ÓÃ»§¸Å¿ö¼ÇÂ¼(user profile)" ÄÚº¬ÒÔÏÂÊı¾İ:
-    µÇÂ¼¼ÇÂ¼, Êµ¼ÊĞÕÃû, µÇÈë´ÎÊı, ²Â¹ı´ÎÊı, ²Â¶Ô´ÎÊı,
-    µÈ¼¶¡ª¡ª°üÀ¨³õ¼¶, ÖĞ¼¶, ¸ß¼¶, ×¨¼Ò, ÒÔ¼°²Â¶Ô°Ù·Ö±È(¿ÉÊµ
-    Ê±¼ÆËã»ñµÃ, »ò½«ÆäÖµ´¢´æÆğÀ´±¸ÓÃ)
+        ä¸€ä»½"ç”¨æˆ·æ¦‚å†µè®°å½•(user profile)" å†…å«ä»¥ä¸‹æ•°æ®:
+    ç™»å½•è®°å½•, å®é™…å§“å, ç™»å…¥æ¬¡æ•°, çŒœè¿‡æ¬¡æ•°, çŒœå¯¹æ¬¡æ•°,
+    ç­‰çº§â€”â€”åŒ…æ‹¬åˆçº§, ä¸­çº§, é«˜çº§, ä¸“å®¶, ä»¥åŠçŒœå¯¹ç™¾åˆ†æ¯”(å¯å®
+    æ—¶è®¡ç®—è·å¾—, æˆ–å°†å…¶å€¼å‚¨å­˜èµ·æ¥å¤‡ç”¨)
 
 --------------------------------------------------------
 */
+
+//ç›®å‰åªèƒ½ç”¨MSVCç¼–è¯‘
 #include <iostream>
 #include <vector>
 #include <string>
@@ -21,23 +23,23 @@ class UserProfile
 
 public:
 
-    enum uLevel { Beginner, Intermediate, Advanced, Guru }; //µÈ¼¶·ÖÀà
+    enum uLevel { Beginner, Intermediate, Advanced, Guru }; //ç­‰çº§åˆ†ç±»
     std::array<std::string, 4> arrayLevel = { "Beginner", "Intermediate", "Advanced", "Guru" };
-    UserProfile(); //guestµÇÂ¼
-    UserProfile(std::string login, uLevel = Beginner); //´øloginµÇÂ¼
+    UserProfile(); //guestç™»å½•
+    UserProfile(std::string login, uLevel = Beginner); //å¸¦loginç™»å½•
 
 
-    //¶ÁÊı¾İ
-    std::string getLogin() const { return _login; } //»ñÈ¡µÇÂ¼ID
-    std::string getLoginName() const { return _login_name; } //»ñÈ¡ÕæÊµĞÕÃû
-    int getLoginTimes() const { return _login_times; } //»ñÈ¡µÇÂ¼´ÎÊı
-    int getGuessTimes() const { return _guess_times; } //»ñÈ¡²Â²â´ÎÊı
-    int getGuessRightTimes() const { return _guess_right_times; } //»ñÈ¡²Â¶Ô´ÎÊı
-    double getGuessAverage() const;  //»ñÈ¡²Â¶Ô°Ù·Ö±È
-    std::string getUserLevel() const { return arrayLevel[_user_level] ;} //»ñÈ¡µÈ¼¶
+    //è¯»æ•°æ®
+    std::string getLogin() const { return _login; } //è·å–ç™»å½•ID
+    std::string getLoginName() const { return _login_name; } //è·å–çœŸå®å§“å
+    int getLoginTimes() const { return _login_times; } //è·å–ç™»å½•æ¬¡æ•°
+    int getGuessTimes() const { return _guess_times; } //è·å–çŒœæµ‹æ¬¡æ•°
+    int getGuessRightTimes() const { return _guess_right_times; } //è·å–çŒœå¯¹æ¬¡æ•°
+    double getGuessAverage() const;  //è·å–çŒœå¯¹ç™¾åˆ†æ¯”
+    std::string getUserLevel() const { return arrayLevel[_user_level] ;} //è·å–ç­‰çº§
 
 
-    //Ğ´Êı¾İ
+    //å†™æ•°æ®
     void setUserName(std::string username) { _login_name = username; }
     void addLoginTimes(int cnt = 1) {  _login_times += cnt; }
     void addGuessTimes(int cnt = 1) { _guess_times += cnt; }
@@ -46,19 +48,19 @@ public:
 
 
 private:
-    std::string _login; //µÇÂ¼ID
-    std::string _login_name; //ÕæÊµĞÕÃû
-    int _login_times; //µÇÂ¼´ÎÊı
-    int _guess_times; //²Â²â´ÎÊı
-    int _guess_right_times; //²Â¶Ô´ÎÊı
-    double _guess_average; //²Â¶Ô°Ù·Ö±È
-    uLevel _user_level; //µÈ¼¶
+    std::string _login; //ç™»å½•ID
+    std::string _login_name; //çœŸå®å§“å
+    int _login_times; //ç™»å½•æ¬¡æ•°
+    int _guess_times; //çŒœæµ‹æ¬¡æ•°
+    int _guess_right_times; //çŒœå¯¹æ¬¡æ•°
+    double _guess_average; //çŒœå¯¹ç™¾åˆ†æ¯”
+    uLevel _user_level; //ç­‰çº§
 
     static std::map<std::string, uLevel> _level_map;
 
 };
 
-//ÖØĞ´<<²Ù×÷·û£¬Êä³öÓÃ»§ĞÅÏ¢
+//é‡å†™<<æ“ä½œç¬¦ï¼Œè¾“å‡ºç”¨æˆ·ä¿¡æ¯
 std::ostream& operator<<(std::ostream &os, const UserProfile &rhs)
 {
     os << rhs.getLogin() << " "
@@ -70,26 +72,27 @@ std::ostream& operator<<(std::ostream &os, const UserProfile &rhs)
     return os;
 }
 
-//guestµÇÂ¼
+//guestç™»å½•
 inline UserProfile::UserProfile()
     : _login("guest"), _user_level(Intermediate),
     _login_times(1), _guess_times(0), _guess_right_times(0)
 {
-    //guestºó´øÎ¨Ò»idÊı ×éºÏ³É Î¨Ò»±êÊ¶·û
+    //gueståå¸¦å”¯ä¸€idæ•° ç»„åˆæˆ å”¯ä¸€æ ‡è¯†ç¬¦
     static int id = 0;
     char buffer[16];
     _itoa_s(id++, buffer, 10);
     _login += buffer;
 }
 
-//´øloginµÇÂ¼
+//å¸¦loginç™»å½•
 inline UserProfile::UserProfile(std::string login, uLevel level)
     : _login(login), _user_level(level),
     _login_times(1), _guess_times(0), _guess_right_times(0) {}
 
-//»ñÈ¡²Â¶Ô°Ù·Ö±È
+//è·å–çŒœå¯¹ç™¾åˆ†æ¯”
 inline double UserProfile::getGuessAverage() const
 {
     return _guess_times ? double ( _guess_right_times ) / double ( _guess_times ) * 100
                         : 0.0;
 }
+
