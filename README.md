@@ -118,3 +118,13 @@ Pentagonal数列的求值公式是P(n)=n(3n-1)/2, 借此产生1,5,12,22,35等元
 # Test4.4  
 
 一份"用户概况记录(user profile)" 内含以下数据: 登录记录, 实际姓名, 登入次数, 猜过次数, 猜对次数, 等级——包括初级, 中级, 高级, 专家, 以及猜对百分比(可实时计算获得, 或将其值储存起来备用). 请写出一个名为UserProfile的class,　提供以下操作: 输入, 输出, 相等测试, 不等测试.其constructorb必须能够处理默认的用户等级, 默认的登录名称("guest"). 对于同样名为guest的多个用户, 你如何保证每个guest有他自己独有的登录会话(login session), 不会和其他人混淆?  
+
+# Test4.5  
+
+请实现一个4x4的 Matrix Class, 至少提供一下接口: 矩阵加法, 矩阵乘法, 打印函数print(), 复合运算符+=,
+以及一组支持下标操作的function call运算符, 像下面这样:  
+
++ float& operator() (int row, int column );  
++ float  operator() (int row, int column ) const;
+
+请提供一个 default constructor, 可选择性地接受16个数据值. 再提供一个constructor(构造函数), 可接受一个拥有16个元素的数组. 你不需要为此 class 提供 copy constructor, copy assignment operator, destructor.  

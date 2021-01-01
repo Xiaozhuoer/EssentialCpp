@@ -93,4 +93,3 @@ inline double UserProfile::getGuessAverage() const
     return _guess_times ? double ( _guess_right_times ) / double ( _guess_times ) * 100
                         : 0.0;
 }
-
