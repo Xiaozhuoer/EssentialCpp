@@ -13,6 +13,7 @@
 
 --------------------------------------------------------
 */
+//目前只能用MSVC编译
 #include "test4_4_userprofile.h"
 #include <iostream>
 #include <string>
